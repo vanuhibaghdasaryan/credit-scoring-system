@@ -538,7 +538,7 @@ MLOPS_STRATEGY = """
 # 12.  MAIN PIPELINE
 # ---------------------------------------------------------------------------
 
-def main(data_path: str = "data/raw/data.csv") -> dict:
+def main(data_path: str = "data.csv") -> dict:
     print("=" * 60)
     print("CREDIT SCORING SYSTEM – FULL PIPELINE")
     print("=" * 60)
@@ -631,8 +631,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data",
         type=str,
-        default="data/raw/data.csv",
-        help="Path to the raw input CSV (default: data/raw/data.csv)"
+        default="data.csv",
+        help="Path to the raw input CSV (default: data.csv)"
     )
     args = parser.parse_args()
     results = main(data_path=args.data)

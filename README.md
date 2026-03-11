@@ -1,4 +1,4 @@
-# Credit Scoring System — End-to-End Pipeline
+# Credit Scoring System
 
 
 ## Project Structure
@@ -7,11 +7,9 @@
 credit_scoring_system.py   ← Main pipeline script
 data.csv                   ← Raw input (800 rows × 9 cols)
 requirements.txt           ← Python dependencies
-outputs/
-  iv_analysis.csv          ← IV / WOE feature rankings
-  cv_results.csv           ← Cross-validation results (all models)
-  feature_importance.csv   ← Permutation importance (AUC drop)
-  credit_scoring_presentation.pptx  ← 10-slide methodology deck
+cv_results.csv             ← Cross-validation results (all models)
+feature_importance.csv     ← Permutation importance (AUC drop)
+iv_analysis.csv            ← IV / WOE feature rankings
 README.md                  ← This file
 ```
 
@@ -24,7 +22,12 @@ pip install -r requirements.txt
 python credit_scoring_system.py
 ```
 
-All outputs are written to the `outputs/` directory.
+Outputs (`cv_results.csv`, `iv_analysis.csv`, `feature_importance.csv`) are written to an `outputs/` folder that is created automatically.
+
+To use a different data file:
+```bash
+python credit_scoring_system.py --data path/to/your_data.csv
+```
 
 ---
 
@@ -242,6 +245,6 @@ Demo PSI of **0.3481** exceeds the 0.25 threshold. In production, this triggers 
 | `outputs/iv_analysis.csv` | IV scores and strength for all 15 features |
 | `outputs/cv_results.csv` | AUC, Std, Avg Precision, F1, LogLoss for 3 models |
 | `outputs/feature_importance.csv` | Permutation importance (AUC drop) for all 15 features |
-| `outputs/credit_scoring_presentation.pptx` | 10-slide methodology deck (Midnight Executive theme) |
+| `outputs/income_paradox.json` | Income architecture analysis (Model 1/2/3) |
 
 ---
