@@ -1,0 +1,50 @@
+# =============================================================================
+# Credit Scoring System — Python Dependencies
+# =============================================================================
+# Install:  pip install -r requirements.txt
+# Tested on Python 3.9, 3.10, 3.11
+# =============================================================================
+
+# ── Core Data Stack ───────────────────────────────────────────────────────────
+numpy>=1.23.0,<2.0.0
+pandas>=1.5.0,<3.0.0
+scipy>=1.9.0
+
+# ── Machine Learning ─────────────────────────────────────────────────────────
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+lightgbm>=3.3.0
+imbalanced-learn>=0.10.0          # SMOTE / class-weight utilities
+
+# ── Model Explainability ─────────────────────────────────────────────────────
+shap>=0.42.0                       # SHAP values (TreeExplainer, KernelExplainer)
+
+# ── Visualisation ────────────────────────────────────────────────────────────
+matplotlib>=3.6.0
+seaborn>=0.12.0
+plotly>=5.13.0                     # Interactive ROC / PR curves in notebooks
+
+# ── MLOps & Experiment Tracking ──────────────────────────────────────────────
+mlflow>=2.4.0                      # Model registry, experiment tracking
+pyyaml>=6.0                        # config.yaml parsing
+
+# ── Data Validation ──────────────────────────────────────────────────────────
+great-expectations>=0.16.0         # Schema & statistical data quality checks
+
+# ── Notebook & Dev Tools ─────────────────────────────────────────────────────
+jupyterlab>=3.6.0
+ipywidgets>=8.0.0                  # Interactive widgets in notebooks
+
+# ── Code Quality ─────────────────────────────────────────────────────────────
+black>=23.0.0                      # Formatter
+flake8>=6.0.0                      # Linter
+isort>=5.12.0                      # Import sorting
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+pytest>=7.3.0
+pytest-cov>=4.0.0                  # Coverage reports
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+joblib>=1.2.0                      # Model serialisation (sklearn default)
+tqdm>=4.65.0                       # Progress bars for batch scoring
+python-dotenv>=1.0.0               # Load .env files for secrets management

@@ -1,0 +1,16 @@
+,IV,strength
+cc_dti,0.36792221665097885,Strong
+age,0.3488045605657477,Strong
+credit_card_debt,0.3434632237387001,Strong
+total_debt,0.31135131708672004,Strong
+years_at_address,0.2590052700136029,Medium
+debt_per_year,0.22929321009385967,Medium
+years_at_employer,0.17838706398514714,Medium
+auto_dti,0.16663132187296298,Medium
+stability_index,0.15245029763012446,Medium
+tenure_ratio,0.1397724822284473,Medium
+other_debt,0.12000087784473668,Medium
+automobile_debt,0.11291364258393166,Medium
+income,0.09295409684428775,Weak
+log_income,0.09295409684428775,Weak
+dti,0.04841523459847837,Weak
