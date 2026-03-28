@@ -1,5 +1,7 @@
 # Credit Scoring System
 
+[![gitcgr](https://gitcgr.com/badge/vanuhibaghdasaryan/credit-scoring-system.svg)](https://gitcgr.com/vanuhibaghdasaryan/credit-scoring-system)
+
 
 ## Project Structure
 
